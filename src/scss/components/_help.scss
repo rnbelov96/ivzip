@@ -1,0 +1,157 @@
+.help {
+  padding-top: 64px;
+  background: #f7f7f7;
+
+  @media (max-width: 991px) {
+    padding-top: 30px;
+  }
+}
+
+.help__title {
+  margin-bottom: 56px;
+  @include title-2;
+  position: relative;
+
+  span {
+    color: $blue;
+  }
+
+  @media (max-width: 1450px) {
+    text-align: center;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 38px;
+    line-height: 45px;
+  }
+
+  &::before {
+    content: url('/src/img/grey-dots.png');
+    position: absolute;
+    top: 490px;
+    left: -351px;
+
+    @media (max-width: 1450px) {
+      text-align: center;
+    }
+  }
+}
+
+.help__list {
+  @include reset-list;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px;
+  position: relative;
+
+  &::before {
+    content: url('/src/img/grey-dots.png');
+    right: -346px;
+    top: -239px;
+    position: absolute;
+    @media (max-width: 1450px) {
+      text-align: center;
+    }
+  }
+
+  &::after {
+    content: url('/src/img/grey-dots.png');
+    right: -346px;
+    bottom: 0px;
+    position: absolute;
+    @media (max-width: 1450px) {
+      content: none;
+    }
+  }
+}
+
+.help__item {
+  @include max-width(448px);
+  min-height: 432px;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-bottom: 36px;
+  padding-top: 122px;
+  background: #ffffff;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 16px;
+  margin-bottom: 62px;
+
+  @media (max-width: 575px) {
+    padding-left: 15px;
+    padding-right: 15px;
+    min-height: auto;
+  }
+
+  &:nth-child(1) .help__item-title {
+    &::before {
+      content: url('/src/img/icons/help-list-1.png');
+      bottom: 47px;
+
+      @media (max-width: 575px) {
+        bottom: 60px;
+      }
+    }
+  }
+  &:nth-child(2) .help__item-title {
+    &::before {
+      content: url('/src/img/icons/help-list-2.png');
+      bottom: 45px;
+    }
+  }
+  &:nth-child(3) .help__item-title {
+    &::before {
+      content: url('/src/img/icons/help-list-3.png');
+      bottom: 85px;
+    }
+  }
+  &:nth-child(4) .help__item-title {
+    &::before {
+      content: url('/src/img/icons/help-list-4.png');
+      bottom: 87px;
+    }
+  }
+  &:nth-child(5) .help__item-title {
+    &::before {
+      content: url('/src/img/icons/help-list-5.png');
+      bottom: 127px;
+    }
+  }
+  &:nth-child(6) .help__item-title {
+    &::before {
+      content: url('/src/img/icons/help-list-6.png');
+      bottom: 82px;
+    }
+  }
+}
+
+.help__item-title {
+  text-align: center;
+  @include subtitle-bold;
+  margin-bottom: 8px;
+  color: $grey;
+  position: relative;
+
+  @media (max-width: 575px) {
+    font-size: 24px;
+    line-height: 26px;
+  }
+
+  &::before {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.help__item-text {
+  margin-bottom: 0;
+  @include main;
+  color: $grey;
+
+  @media (max-width: 575px) {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}

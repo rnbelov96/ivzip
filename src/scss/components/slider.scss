@@ -1,0 +1,47 @@
+.mini-slider {
+  overflow: hidden;
+}
+
+.slider__img-box {
+  display: flex;
+  transition: transform 1s ease-in;
+  transform: translate3d(-100%, 0, 0);
+}
+
+.slider__img {
+  width: 100%;
+}
+
+.mini-slider__prev-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 50px;
+  width: 20px;
+  height: 40px;
+  @include reset-btn;
+
+  &:hover,
+  &:focus {
+    path {
+      opacity: 1;
+    }
+  }
+}
+
+.mini-slider__next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -34px;
+  width: 20px;
+  height: 40px;
+  @include reset-btn;
+
+  &:hover,
+  &:focus {
+    path {
+      opacity: 1;
+    }
+  }
+}

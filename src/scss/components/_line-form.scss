@@ -1,0 +1,137 @@
+.line-form {
+  @include max-width(1616px);
+  width: 115%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #ffffff;
+  box-shadow: 0px 0px 20px rgba(119, 119, 119, 0.15);
+  border-radius: 16px;
+  padding-top: 45px;
+  padding-bottom: 28px;
+  padding-left: 100px;
+  padding-right: 100px;
+
+  &_desc {
+    top: -87px;
+    margin-bottom: -87px;
+
+    @media (max-width: 991px) {
+      top: -37px;
+      margin-bottom: -37px;
+    }
+
+    @media (max-width: 575px) {
+      top: -13px;
+      margin-bottom: -13px;
+    }
+  }
+
+  @media (max-width: 1650px) {
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  @media (max-width: 575px) {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+.line-form__title {
+  font-size: 32px;
+  line-height: 40px;
+  margin-bottom: 44px;
+  color: $grey;
+  text-align: center;
+  font-weight: 500;
+
+  @media (max-width: 575px) {
+    font-size: 22px;
+    line-height: 32px;
+    margin-bottom: 30px;
+  }
+}
+
+.line-form__input-list {
+  justify-content: space-between;
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 17px;
+
+  @media (max-width: 991px) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.line-form__input-box {
+  width: 23%;
+
+  @media (max-width: 1200px) {
+    width: 24%;
+  }
+
+  @media (max-width: 991px) {
+    @include max-width(600px);
+    margin-bottom: 25px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.line-form__input-label {
+  font-size: 22px;
+  line-height: 32px;
+  margin-bottom: 10px;
+
+  @media (max-width: 1200px) {
+    font-size: 19px;
+  }
+}
+
+.line-form__input {
+  border: 1px solid #4e4d4d;
+  border-radius: 8px;
+  background: #ffffff;
+  opacity: 0.5;
+  @include main;
+  padding-left: 32px;
+  padding-right: 15px;
+  min-height: 80px;
+  width: 100%;
+  font-weight: 300;
+
+  @media (max-width: 1200px) {
+    padding-left: 15px;
+  }
+
+  &:hover,
+  &:focus {
+    outline: none;
+    opacity: 1;
+  }
+}
+
+.line-form__policy {
+  @include max-width(663px);
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+  color: $grey;
+  text-align: center;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+  opacity: 0.5;
+
+  button {
+    @include reset-btn;
+    color: $grey;
+  }
+}

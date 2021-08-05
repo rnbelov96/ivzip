@@ -1,0 +1,10 @@
+.feedback {
+  padding-top: 64px;
+  padding-bottom: 64px;
+  background: #2D4693;
+  
+  @media (max-width: 991px) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}

@@ -1,0 +1,146 @@
+.stats {
+  padding-top: 64px;
+  padding-bottom: 64px;
+  background: #f7f7f7;
+
+  @media (max-width: 991px) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+.stats__title {
+  @include title-2;
+  margin-bottom: 16px;
+
+  span {
+    color: $blue;
+  }
+
+  @media (max-width: 575px) {
+    font-size: 44px;
+    line-height: 60px;
+  }
+}
+
+.stats__text {
+  @include max-width(1052px);
+  @include subtitle;
+  margin-bottom: 48px;
+
+  b {
+    color: $blue;
+  }
+
+  @media (max-width: 575px) {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+.stats__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+
+  &::after {
+    content: url('/src/img/grey-dots.png');
+    position: absolute;
+    right: -307px;
+    top: -311px;
+
+    @media (max-width: 1450px) {
+      content: none;
+    }
+  }
+
+  @media (max-width: 1450px) {
+    flex-direction: column;
+  }
+}
+
+.stats__left-box {
+  width: 33%;
+
+  @media (max-width: 1450px) {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+}
+
+.stats__right-box {
+  width: 67%;
+
+  @media (max-width: 1450px) {
+    width: 100%;
+  }
+}
+
+.stats__list {
+  @include reset-list;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.stats__item {
+  width: 448px;
+}
+
+.stats__item-number {
+  background: linear-gradient(180deg, #ffde66 0%, #f7c200 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: $yellow;
+  font-size: 32px;
+  line-height: 64px;
+  text-align: center;
+  font-weight: 900;
+  margin-bottom: 0px;
+
+  span {
+    font-size: 72px;
+
+    @media (max-width: 575px) {
+      font-size: 60px;
+    }
+  }
+
+  @media (max-width: 575px) {
+    font-size: 28px;
+  }
+
+  &_big {
+    font-size: 48px;
+    margin-bottom: 5px;
+
+    @media (max-width: 575px) {
+      font-size: 34px;
+    }
+
+    span {
+      font-size: 96px;
+
+      @media (max-width: 575px) {
+        font-size: 62px;
+      }
+    }
+  }
+}
+
+.stats__item-text {
+  @include main-bold;
+  color: $grey;
+  text-align: center;
+  margin-bottom: 0;
+
+  &_big {
+    font-size: 32px;
+    line-height: 42px;
+  }
+}
