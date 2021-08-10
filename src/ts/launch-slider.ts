@@ -1,6 +1,6 @@
 export {};
 
-const imagesLength = 4;
+const imagesLength = 3;
 let currentImage = 1;
 const mode = 1;
 
@@ -27,10 +27,10 @@ let posInit: number;
 let isDragging = false;
 
 const imagesBoxEl = document.querySelector(
-  '.partner__slider-img-box',
+  '.launch__slider-img-box',
 ) as HTMLDivElement;
 const wrapperEl = document.querySelector(
-  '.partner__slider-wrapper',
+  '.launch__slider-wrapper',
 ) as HTMLDivElement;
 
 let wrapperCoords = wrapperEl.getBoundingClientRect();
@@ -38,10 +38,10 @@ let wrapperLeftCoords = wrapperCoords.left;
 let wrapperWidth = wrapperCoords.width;
 
 const prevBtnEl = document.querySelector(
-  '.partner__slider-btn-prev',
+  '.launch__slider-btn-prev',
 ) as HTMLButtonElement;
 const nextBtnEl = document.querySelector(
-  '.partner__slider-btn-next',
+  '.launch__slider-btn-next',
 ) as HTMLButtonElement;
 
 let timerInterval: NodeJS.Timeout;

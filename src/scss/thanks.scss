@@ -2,93 +2,80 @@
 @import './lib/fonts.scss';
 @import './base/variables.scss';
 @import './base/mixins.scss';
+@import './components/button.scss';
 @import './base/global.scss';
-@import './components/modal.scss';
-@import './components/priv-policy.scss';
 
-.thanks,
-.error {
-  display: flex;
-  height: 100%;
-  flex-direction: column;
+.thanks {
+  min-height: 1080px;
+  height: 100vh;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  @include bg;
+  background-image: url('/src/img/bgs/thanks-bg.jpg');
 
-  &__body {
-    background-color: black;
+  @media (max-width: 767px) {
+    min-height: auto;
   }
 
-  &__body,
-  &__html {
-    height: 100%;
-  }
-
-  &__header {
-    overflow: hidden;
-    flex: 0 0 auto;
-    padding-top: 20px;
-    padding-bottom: 30px;
-  }
-
-  .container {
-    max-width: 1140px;
-  }
-
-  footer {
-    flex: 0 0 auto;
-  }
-
-  &__content {
-    flex: 1 0 auto;
-    padding: 40px 0;
-
-    .container {
-      height: 100%;
-    }
-  }
-
-  &__content-wrapper {
-    display: flex;
-    height: 100%;
-    align-items: center;
-  }
-
-  &__content-box {
-    width: 100%;
-  }
-
-  &__title {
-    color: white;
-    font-size: 30px;
-    font-weight: 500;
-    text-align: center;
-  }
-
-  &__user-name {
-    text-transform: uppercase;
-  }
-
-  &__subtitle {
-    margin-top: 40px;
-    margin-bottom: 20px;
-    color: white;
-    font-size: 18px;
-    text-align: center;
-  }
-
-  &__link {
-    &:hover,
-    &:focus {
-      text-decoration: none;
-    }
-  }
-
-  &__btn-box {
-    display: flex;
-    justify-content: center;
+  @media (max-width: 575px) {
+    padding-top: 0;
   }
 }
 
-.error {
-  &__btn-box {
-    margin-top: 20px;
+.thanks__logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 263px;
+
+  @media (max-width: 767px) {
+    margin-bottom: 120px;
+  }
+
+  @media (max-width: 575px) {
+    margin-bottom: 20px;
+  }
+}
+
+.thanks__title {
+  @include title;
+  text-align: center;
+  color: white;
+  margin-bottom: 16px;
+
+  @media (max-width: 575px) {
+    font-size: 34px;
+    line-height: 40px;
+  }
+
+  span {
+    color: $yellow;
+  }
+}
+
+.thanks__subtitle {
+  @include subtitle-bold;
+  text-align: center;
+  margin-bottom: 48px;
+  color: white;
+
+  @media (max-width: 575px) {
+    font-size: 24px;
+    line-height: 34px;
+    margin-bottom: 36px;
+  }
+}
+
+.thanks__btn-box {
+  @include max-width(328px);
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+.thanks__link {
+  &:hover,
+  &:focus {
+    text-decoration: none;
   }
 }

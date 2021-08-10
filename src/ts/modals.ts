@@ -27,23 +27,16 @@ const openModal = (modalEl: HTMLDivElement) => {
 };
 
 const modalElList = document.querySelectorAll('.modal');
-const [formModalEl, policyModalEl, youtubeAdvModalEl] = modalElList;
+const [formModalEl, policyModalEl] = modalElList;
 
 const formTitleEl = formModalEl.querySelector('span') as HTMLSpanElement;
-const formBtnEl = formModalEl.querySelector('button') as HTMLButtonElement;
+const formBtnElList = formModalEl.querySelectorAll('.js-modal-form-btn-label');
 
 const modalWrapperElList = document.querySelectorAll('.modal__center-wrapper');
 modalElList.forEach(modalEl => {
   modalEl.addEventListener('click', (e: Event) => {
     if (e.target === e.currentTarget || [...modalWrapperElList].includes(e.target as Element)) {
       const clickedModal = e.currentTarget as HTMLDivElement;
-      if (clickedModal === youtubeAdvModalEl) {
-        const iframe = clickedModal.querySelector('iframe');
-        if (iframe) {
-          const iframeSrc = iframe.src;
-          iframe.src = iframeSrc;
-        }
-      }
       closeModal(clickedModal);
     }
   });
@@ -70,7 +63,9 @@ const callbackBtnElList = document.querySelectorAll('.js-callback');
 callbackBtnElList.forEach(btn => {
   btn.addEventListener('click', () => {
     formTitleEl.textContent = modalFormInfoList[0].title;
-    formBtnEl.textContent = modalFormInfoList[0].button;
+    formBtnElList.forEach(el => {
+      el.textContent = modalFormInfoList[0].button;
+    });
     openModal(formModalEl as HTMLDivElement);
   });
 });
@@ -79,12 +74,9 @@ const presentBtnElList = document.querySelectorAll('.js-present');
 presentBtnElList.forEach(btn => {
   btn.addEventListener('click', () => {
     formTitleEl.textContent = modalFormInfoList[1].title;
-    formBtnEl.textContent = modalFormInfoList[1].button;
+    formBtnElList.forEach(el => {
+      el.textContent = modalFormInfoList[0].button;
+    });
     openModal(formModalEl as HTMLDivElement);
   });
-});
-
-const youtubeAdvBtnCallEl = document.querySelector('.js-youtube-adv') as HTMLButtonElement;
-youtubeAdvBtnCallEl.addEventListener('click', () => {
-  openModal(youtubeAdvModalEl as HTMLDivElement);
 });

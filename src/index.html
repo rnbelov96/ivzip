@@ -46,6 +46,9 @@
               Франшиза магазина IVZIP <br />
               с прибылью <span>от 300&nbsp;000 рублей</span> в месяц
             </h1>
+            <button class="button button_present js-present">
+              Получить презентацию
+            </button>
             <p class="desc__text">
               Продавайте запасные части для бытовой и профессиональной техники
               и увеличивайте свой доход, оказывая ремонтные услуги.
@@ -406,13 +409,6 @@
                 <div class="partner__slider-img-box">
                   <div class="partner__slider-img-item">
                     <img
-                      src="./img/gallery/partner-3.png"
-                      alt="Фотография помещения"
-                      class="slider__img"
-                    />
-                  </div>
-                  <div class="partner__slider-img-item">
-                    <img
                       src="./img/gallery/partner-1.png"
                       alt="Фотография помещения"
                       class="slider__img"
@@ -428,6 +424,13 @@
                   <div class="partner__slider-img-item">
                     <img
                       src="./img/gallery/partner-3.png"
+                      alt="Фотография помещения"
+                      class="slider__img"
+                    />
+                  </div>
+                  <div class="partner__slider-img-item">
+                    <img
+                      src="./img/gallery/partner-4.png"
                       alt="Фотография помещения"
                       class="slider__img"
                     />
@@ -454,6 +457,13 @@
                       class="slider__img"
                     />
                   </div>
+                  <div class="partner__slider-img-item">
+                    <img
+                      src="./img/gallery/partner-4.png"
+                      alt="Фотография помещения"
+                      class="slider__img"
+                    />
+                  </div>
 
                   <div class="partner__slider-img-item">
                     <img
@@ -478,7 +488,7 @@
                   </div>
                   <div class="partner__slider-img-item">
                     <img
-                      src="./img/gallery/partner-1.png"
+                      src="./img/gallery/partner-4.png"
                       alt="Фотография помещения"
                       class="slider__img"
                     />
@@ -603,6 +613,157 @@
               </ul>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section class="calc">
+        <div class="container">
+          <h2 class="calc__title">
+            Узнайте, какую <span>прибыль вам принесёт франшиза</span> IVZIP
+          </h2>
+          <div class="calc__content">
+            <div class="calc__calc-box">
+              <div class="calc__input-box">
+                <p class="calc__input-label">
+                  Запасные части и комплектующие для бытовой техники
+                </p>
+                <input
+                  type="range"
+                  min="100"
+                  max="1000"
+                  step="100"
+                  value="500"
+                  class="calc__input js-range js-home-parts-range"
+                />
+                <div class="calc__endpoints">
+                  <div class="calc__endpoint">100</div>
+                  <div class="calc__endpoint">200</div>
+                  <div class="calc__endpoint">300</div>
+                  <div class="calc__endpoint">400</div>
+                  <div class="calc__endpoint">500</div>
+                  <div class="calc__endpoint">600</div>
+                  <div class="calc__endpoint">700</div>
+                  <div class="calc__endpoint">800</div>
+                  <div class="calc__endpoint">900</div>
+                  <div class="calc__endpoint">1000</div>
+                </div>
+              </div>
+              <div class="calc__input-box">
+                <p class="calc__input-label">
+                  Запасные части и комплектующие <br />для профессиональной
+                  техники
+                </p>
+                <input
+                  type="range"
+                  min="100"
+                  max="1000"
+                  step="100"
+                  value="500"
+                  class="calc__input js-range js-profi-parts-range"
+                />
+                <div class="calc__endpoints">
+                  <div class="calc__endpoint">100</div>
+                  <div class="calc__endpoint">200</div>
+                  <div class="calc__endpoint">300</div>
+                  <div class="calc__endpoint">400</div>
+                  <div class="calc__endpoint">500</div>
+                  <div class="calc__endpoint">600</div>
+                  <div class="calc__endpoint">700</div>
+                  <div class="calc__endpoint">800</div>
+                  <div class="calc__endpoint">900</div>
+                  <div class="calc__endpoint">1000</div>
+                </div>
+              </div>
+              <div class="calc__input-box">
+                <p class="calc__input-label">Ремонтные услуги</p>
+                <input
+                  type="range"
+                  min="0"
+                  max="50"
+                  step="10"
+                  value="20"
+                  class="calc__input js-range js-repair-range"
+                />
+                <div class="calc__endpoints">
+                  <div class="calc__endpoint calc__endpoint_small">0</div>
+                  <div class="calc__endpoint calc__endpoint_small">10</div>
+                  <div class="calc__endpoint calc__endpoint_small">20</div>
+                  <div class="calc__endpoint calc__endpoint_small">30</div>
+                  <div class="calc__endpoint calc__endpoint_small">40</div>
+                  <div class="calc__endpoint calc__endpoint_small">50</div>
+                </div>
+              </div>
+            </div>
+            <p class="calc__text">Ваша чистая прибыль:</p>
+            <div class="calc__result-box">
+              <img
+                src="./img/phone-with-tool.png"
+                alt="Смартфон"
+                class="calc__result-img"
+              />
+              <p class="calc__result js-calc-result">350 250</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="feedback">
+        <div class="container">
+          <form class="line-form line-form_calc-feedback">
+            <h3 class="line-form__title">
+              Получите персональный расчёт прибыли за 2 минуты
+            </h3>
+            <div class="line-form__input-list">
+              <div class="line-form__input-box">
+                <label for="calc-feedback-name" class="line-form__input-label"
+                  >Введите ваше имя</label
+                ><input
+                  type="text"
+                  placeholder=""
+                  name="name"
+                  data-type="name"
+                  class="line-form__input"
+                  id="calc-feedback-name"
+                />
+              </div>
+              <div class="line-form__input-box">
+                <label for="fin-feedback-phone" class="line-form__input-label"
+                  >Введите ваш телефон</label
+                ><input
+                  type="tel"
+                  placeholder="+7 (___) ___ ____"
+                  name="phone"
+                  data-type="phone"
+                  class="line-form__input"
+                  id="calc-feedback-phone"
+                />
+              </div>
+              <div class="line-form__input-box">
+                <label for="fin-feedback-email" class="line-form__input-label"
+                  >Введите ваш e-mail</label
+                ><input
+                  type="email"
+                  placeholder="example@mail.ru"
+                  name="email"
+                  data-type="email"
+                  class="line-form__input"
+                  id="calc-feedback-email"
+                />
+              </div>
+              <div class="line-form__input-box">
+                <button type="submit" class="button button_line-form">
+                  Получить расчёт
+                </button>
+              </div>
+            </div>
+            <p class="line-form__policy">
+              Нажимая на кнопку «Получить расчёт», я даю согласие на обработку
+              персональных данных и соглашаюсь с
+              <button type="button" class="js-policy">
+                политикой конфиденциальности
+              </button>
+            </p>
+          </form>
         </div>
       </section>
 
@@ -793,10 +954,475 @@
           </form>
         </div>
       </section>
+
+      <section class="launch">
+        <div class="container">
+          <h2 class="launch__title">
+            <span>От идеи до запуска бизнеса</span> по проверенной модели за 1
+            месяц!
+          </h2>
+          <div class="launch__content">
+            <ul class="launch__list">
+              <li class="launch__item">
+                <b>Договор.</b> Заключаем договор франчайзинга, юридически
+                фиксируем взаимные права и обязанности.
+              </li>
+              <li class="launch__item">
+                <b>Подготовка.</b> Находите помещение под торговую точку,
+                заключаете договор аренды, при необходимости — помогаем вести
+                переговоры с собственником. Ремонтируете и обустраиваете
+                помещение, мы помогаем решить сложные вопросы, а параллельно с
+                этим а также поможем найти и обучить сотрудников.
+              </li>
+              <li class="launch__item">
+                <b>Поставка первичной партии товара</b> — на нас! В первую
+                партию товара мы включим самые «ходовые» позиции, которые
+                покупаются чаще всего и в большем объеме.
+              </li>
+              <li class="launch__item">
+                <b>Старт рекламной кампании.</b> Заранее начинаем привлекать
+                внимание к торговой точке, чтобы с первых дней выйти на плановые
+                показатели.
+              </li>
+              <li class="launch__item">
+                <b>Открытие.</b> Начинаете принимать заявки и обслуживать
+                клиентов, мы всегда на связи и помогаем вести дела.
+              </li>
+            </ul>
+            <div class="launch__slider-box">
+              <div class="launch__slider-wrapper">
+                <div class="launch__slider-img-box">
+                  <div class="launch__slider-img-item">
+                    <img
+                      src="./img/gallery/launch-3.png"
+                      alt="Фотография помещения"
+                      class="slider__img"
+                    />
+                  </div>
+                  <div class="launch__slider-img-item">
+                    <img
+                      src="./img/gallery/launch-1.png"
+                      alt="Фотография помещения"
+                      class="slider__img"
+                    />
+                  </div>
+                  <div class="launch__slider-img-item">
+                    <img
+                      src="./img/gallery/launch-2.png"
+                      alt="Фотография помещения"
+                      class="slider__img"
+                    />
+                  </div>
+                  <div class="launch__slider-img-item">
+                    <img
+                      src="./img/gallery/launch-3.png"
+                      alt="Фотография помещения"
+                      class="slider__img"
+                    />
+                  </div>
+
+                  <div class="launch__slider-img-item">
+                    <img
+                      src="./img/gallery/launch-1.png"
+                      alt="Фотография помещения"
+                      class="slider__img"
+                    />
+                  </div>
+                  <div class="launch__slider-img-item">
+                    <img
+                      src="./img/gallery/launch-2.png"
+                      alt="Фотография помещения"
+                      class="slider__img"
+                    />
+                  </div>
+                  <div class="launch__slider-img-item">
+                    <img
+                      src="./img/gallery/launch-3.png"
+                      alt="Фотография помещения"
+                      class="slider__img"
+                    />
+                  </div>
+
+                  <div class="launch__slider-img-item">
+                    <img
+                      src="./img/gallery/launch-1.png"
+                      alt="Фотография помещения"
+                      class="slider__img"
+                    />
+                  </div>
+                  <div class="launch__slider-img-item">
+                    <img
+                      src="./img/gallery/launch-2.png"
+                      alt="Фотография помещения"
+                      class="slider__img"
+                    />
+                  </div>
+                  <div class="launch__slider-img-item">
+                    <img
+                      src="./img/gallery/launch-3.png"
+                      alt="Фотография помещения"
+                      class="slider__img"
+                    />
+                  </div>
+                  <div class="launch__slider-img-item">
+                    <img
+                      src="./img/gallery/launch-1.png"
+                      alt="Фотография помещения"
+                      class="slider__img"
+                    />
+                  </div>
+                </div>
+              </div>
+              <button class="launch__slider-btn-prev">
+                <svg
+                  width="25"
+                  height="45"
+                  viewBox="0 0 25 45"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    opacity="0.5"
+                    d="M22.3903 42.5071L2.39026 22.5071L22.3903 2.50708"
+                    stroke="#4E4D4D"
+                    stroke-width="3.37589"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+              <button class="launch__slider-btn-next">
+                <svg
+                  width="24"
+                  height="45"
+                  viewBox="0 0 24 45"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    opacity="0.5"
+                    d="M2.00024 42.5071L22.0002 22.5071L2.00024 2.50708"
+                    stroke="#4E4D4D"
+                    stroke-width="3.37589"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="steps">
+        <div class="container">
+          <h2 class="steps__title">
+            Просто и наглядно: <span>ваша работающая франшиза IVZIP</span> в 4
+            этапа
+          </h2>
+          <ul class="steps__list">
+            <li class="steps__item">
+              <p class="steps__item-title">МЫ:</p>
+              <p class="steps__item-text">
+                Продвигаем вашу торговую точку через разработанный
+                Интернет-магазин и помогаем привлечь клиентов
+              </p>
+            </li>
+            <li class="steps__item">
+              <p class="steps__item-title">ВЫ:</p>
+              <p class="steps__item-text">
+                Проверяете товарные остатки 1С: Управление торговлей
+                и оставляете нам заявку для поставки очередной партии запасных
+                частей и комплектующих
+              </p>
+            </li>
+            <li class="steps__item">
+              <p class="steps__item-title">МЫ:</p>
+              <p class="steps__item-text">
+                Загружаем поставляемую партию с центрального склада и доставляем
+                товар на вашу торговую точку
+              </p>
+            </li>
+            <li class="steps__item">
+              <p class="steps__item-title">ВЫ:</p>
+              <p class="steps__item-text">
+                Продаёте запасные части и комплектующие, получаете прибыль
+                и выходите на ежемесячные плановые показатели
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="feedback">
+        <div class="container">
+          <form class="line-form line-form_fin-2-feedback">
+            <h3 class="line-form__title">
+              Оставьте заявку и получите персональную финансовую модель
+            </h3>
+            <div class="line-form__input-list">
+              <div class="line-form__input-box">
+                <label for="fin-2-feedback-name" class="line-form__input-label"
+                  >Введите ваше имя</label
+                ><input
+                  type="text"
+                  placeholder=""
+                  name="name"
+                  data-type="name"
+                  class="line-form__input"
+                  id="fin-2-feedback-name"
+                />
+              </div>
+              <div class="line-form__input-box">
+                <label for="fin-2-feedback-phone" class="line-form__input-label"
+                  >Введите ваш телефон</label
+                ><input
+                  type="tel"
+                  placeholder="+7 (___) ___ ____"
+                  name="phone"
+                  data-type="phone"
+                  class="line-form__input"
+                  id="fin-2-feedback-phone"
+                />
+              </div>
+              <div class="line-form__input-box">
+                <label for="fin-2-feedback-email" class="line-form__input-label"
+                  >Введите ваш e-mail</label
+                ><input
+                  type="email"
+                  placeholder="example@mail.ru"
+                  name="email"
+                  data-type="email"
+                  class="line-form__input"
+                  id="fin-2-feedback-email"
+                />
+              </div>
+              <div class="line-form__input-box">
+                <button type="submit" class="button button_line-form">
+                  оставить заявку
+                </button>
+              </div>
+            </div>
+            <p class="line-form__policy">
+              Нажимая на кнопку «Оставить заявку», я даю согласие на обработку
+              персональных данных и соглашаюсь с
+              <button type="button" class="js-policy">
+                политикой конфиденциальности
+              </button>
+            </p>
+          </form>
+        </div>
+      </section>
+
+      <section class="offer">
+        <div class="container">
+          <h2 class="offer__title">
+            Проверьте, есть ли <span>вы в списке перспективных партнёров</span>
+          </h2>
+          <p class="offer__text">
+            Мы не предъявляем требований к опыту, образованию
+            и профессиональному стажу —
+            <b>партнёром IVZIP может стать каждый</b>, кто готов эффективно
+            работать и приносить пользу людям.
+          </p>
+          <p class="offer__list-label">Особенно предложение будет выгодно:</p>
+          <ul class="offer__list">
+            <li class="offer__item">
+              <img src="./img/icons/offer-list-1.png" class="offer__item-img" />
+              <p class="offer__item-title">
+                Специалистам <br />
+                с опытом работы
+              </p>
+              <p class="offer__item-text">
+                в сфере ремонта и продаж бытовой техники, которые хотят свой
+                собственный бизнес.
+              </p>
+            </li>
+            <li class="offer__item">
+              <img src="./img/icons/offer-list-2.png" class="offer__item-img" />
+              <p class="offer__item-title">Действующим предпринимателям</p>
+              <p class="offer__item-text">
+                смежных направлений — владельцам ремонтных мастерских, сервисных
+                центров, магазинов торговли строительным инструментом,
+                автозапчастями.
+              </p>
+            </li>
+            <li class="offer__item">
+              <img src="./img/icons/offer-list-3.png" class="offer__item-img" />
+              <p class="offer__item-title">
+                Начинающим <br />
+                предпринимателям
+              </p>
+              <p class="offer__item-text">планирующим собственное дело.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="city">
+        <div class="container">
+          <div class="city__content">
+            <div class="city__left-box">
+              <h2 class="city__title">
+                <span>Присоединяйтесь</span> к команде профессионалов!
+              </h2>
+              <p class="city__text">
+                Проверьте, <span>свободен ли ваш город</span> для работы
+                по франшизе.
+              </p>
+              <p class="city__text">
+                Ищем <span>ограниченное число партнёров — 10</span> в первый
+                год, так как планируем поддерживать и комплексно сопровождать
+                каждого. <span>Свяжитесь с нами сегодня</span>, чтобы узнать,
+                свободен ли ваш город.
+              </p>
+              <img src="./img/land.png" class="city__img" />
+            </div>
+            <form class="modal-form modal-form_city">
+              <h3 class="modal-form__title">
+                Станьте представителем IVZIP в своём городе!
+              </h3>
+              <div class="modal-form__input-list">
+                <div class="modal-form__input-box">
+                  <label for="city-name" class="modal-form__input-label"
+                    >Введите ваше имя</label
+                  ><input
+                    type="text"
+                    placeholder=""
+                    name="name"
+                    data-type="name"
+                    class="modal-form__input"
+                    id="city-name"
+                  />
+                </div>
+                <div class="modal-form__input-box">
+                  <label for="city-phone" class="modal-form__input-label"
+                    >Введите ваш телефон</label
+                  ><input
+                    type="tel"
+                    placeholder="+7 (___) ___ ____"
+                    name="phone"
+                    data-type="phone"
+                    class="modal-form__input"
+                    id="city-phone"
+                  />
+                </div>
+                <div class="modal-form__input-box">
+                  <label for="city-email" class="modal-form__input-label"
+                    >Введите ваш e-mail</label
+                  ><input
+                    type="email"
+                    placeholder="example@mail.ru"
+                    name="email"
+                    data-type="email"
+                    class="modal-form__input"
+                    id="city-email"
+                  />
+                </div>
+                <div class="modal-form__input-box">
+                  <button type="submit" class="button button_modal-form">
+                    Занять город
+                  </button>
+                </div>
+              </div>
+              <p class="modal-form__policy">
+                Нажимая на кнопку «Занять город», я даю согласие на обработку
+                персональных данных и соглашаюсь с
+                <button type="button" class="js-policy">
+                  политикой конфиденциальности
+                </button>
+              </p>
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
 
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__content">
+          <div class="footer__left-box">
+            <p class="footer__company-info">ООО «Сервис-холод», 2021</p>
+            <p class="footer__company-info">ИНН 1234567890</p>
+            <address class="footer__address">г. Казань, ул.</address>
+          </div>
+          <div class="footer__right-box">
+            <a href="tel:+78000000000" class="footer__phone"
+              >8 (800) 000 00 00</a
+            ><a href="https://франчайзинг5.рф" class="footer__franch5"
+              >Сделано ФРАНЧАЙЗИНГ5</a
+            ><button class="footer__policy js-policy">
+              Политика конфиденциальности
+            </button>
+          </div>
+        </div>
+      </div>
+    </footer>
+
     <div class="modal">
-      <div class="modal__center-wrapper"></div>
+      <div class="modal__center-wrapper">
+        <form class="modal-form modal-form_modal">
+          <h3 class="modal-form__title">
+            Отправьте заявку <span class="js-modal-form-title"></span>
+          </h3>
+          <div class="modal-form__input-list">
+            <div class="modal-form__input-box">
+              <label for="modal-name" class="modal-form__input-label"
+                >Введите ваше имя</label
+              ><input
+                type="text"
+                placeholder=""
+                name="name"
+                data-type="name"
+                class="modal-form__input"
+                id="modal-name"
+              />
+            </div>
+            <div class="modal-form__input-box">
+              <label for="modal-phone" class="modal-form__input-label"
+                >Введите ваш телефон</label
+              ><input
+                type="tel"
+                placeholder="+7 (___) ___ ____"
+                name="phone"
+                data-type="phone"
+                class="modal-form__input"
+                id="modal-phone"
+              />
+            </div>
+            <div class="modal-form__input-box">
+              <label for="modal-email" class="modal-form__input-label"
+                >Введите ваш e-mail</label
+              ><input
+                type="email"
+                placeholder="example@mail.ru"
+                name="email"
+                data-type="email"
+                class="modal-form__input"
+                id="modal-email"
+              />
+            </div>
+            <div class="modal-form__input-box">
+              <button type="submit" class="button button_modal-form">
+                <span class="js-modal-form-btn-label">Оставить заявку</span>
+              </button>
+            </div>
+          </div>
+          <p class="modal-form__policy">
+            Нажимая на кнопку «<span class="js-modal-form-btn-label"
+              >Оставить заявку</span
+            >», я даю согласие на обработку персональных данных и соглашаюсь с
+            <button type="button" class="js-policy">
+              политикой конфиденциальности
+            </button>
+          </p>
+          <button
+            data-modal-close=""
+            class="modal__close"
+            title="Закрыть"
+            type="button"
+          ></button>
+        </form>
+      </div>
     </div>
     <div class="modal">
       <div class="priv-policy priv-policy_modal">
@@ -946,7 +1572,7 @@
             новых продуктах и услугах, специальных предложениях и различных
             событиях. Пользователь всегда может отказаться от получения
             информационных сообщений, направив Оператору письмо на адрес
-            электронной почты с доменом hotchicken18@yandex.ru с пометкой «Отказ
+            электронной почты с доменом example@mail.ru с пометкой «Отказ
             от уведомлений о новых продуктах и услугах и специальных
             предложениях».
           </li>

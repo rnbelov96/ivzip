@@ -45,6 +45,17 @@
   align-items: center;
   position: relative;
 
+  &::before {
+    content: url('/src/img/grey-dots.png');
+    position: absolute;
+    left: -345px;
+    top: 51px;
+
+    @media (max-width: 1450px) {
+      content: none;
+    }
+  }
+
   &::after {
     content: url('/src/img/grey-dots.png');
     position: absolute;

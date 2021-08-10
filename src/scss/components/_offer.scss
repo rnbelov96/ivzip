@@ -1,0 +1,128 @@
+.offer {
+  padding-top: 64px;
+  padding-bottom: 55px;
+  position: relative;
+  z-index: -1;
+
+  @media (max-width: 1200px) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+.offer__title {
+  @include max-width(730px);
+  margin-bottom: 16px;
+  @include title-2;
+  position: relative;
+
+  @media (max-width: 575px) {
+    font-size: 32px;
+    line-height: 45px;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 555px;
+    height: 555px;
+    border-radius: 50%;
+    background: #ffd744;
+    z-index: -2;
+    right: -1030px;
+    top: -287px;
+    @media (max-width: 1200px) {
+      content: none;
+    }
+  }
+
+  &::after {
+    content: url('/src/img/grey-dots-height.png');
+    position: absolute;
+    right: -943px;
+    top: 108px;
+    @media (max-width: 1200px) {
+      content: none;
+    }
+  }
+
+  span {
+    color: $blue;
+  }
+}
+
+.offer__text {
+  @include subtitle;
+  margin-bottom: 48px;
+  @include max-width(1055px);
+  color: $grey;
+
+  @media (max-width: 575px) {
+    font-size: 19px;
+    line-height: 35px;
+    margin-bottom: 25px;
+  }
+
+  b {
+    color: $blue;
+  }
+}
+
+.offer__list-label {
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 42px;
+  text-align: center;
+  color: $grey;
+  margin-bottom: 32px;
+
+  @media (max-width: 575px) {
+    font-size: 25px;
+    line-height: 35px;
+  }
+}
+
+.offer__list {
+  @include reset-list;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+.offer__item {
+  @include max-width(448px);
+}
+
+.offer__item-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 16px;
+}
+
+.offer__item-title {
+  font-size: 28px;
+  line-height: 34px;
+  font-weight: bold;
+  text-align: center;
+  color: $grey;
+  margin-bottom: 16px;
+
+  @media (max-width: 575px) {
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+
+.offer__item-text {
+  text-align: center;
+  color: $grey;
+  @include main;
+  margin-bottom: 0;
+
+  @media (max-width: 575px) {
+    font-size: 19px;
+    line-height: 29px;
+  }
+}
