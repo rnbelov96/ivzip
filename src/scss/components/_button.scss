@@ -20,13 +20,38 @@
   position: relative;
 
   &:hover {
-    background: #FC4F19;
+    background: #fc4f19;
   }
 
   &:active {
-    background: #CB3300;
+    background: #cb3300;
     position: relative;
     top: 6px;
+  }
+
+  &_header-float {
+    @include max-width(240px);
+    font-size: 22px;
+    line-height: 32px;
+    min-height: 57px;
+    box-shadow: 0px 4px 0px #cb3300;
+
+    @media (max-width: 575px) {
+      display: none;
+    }
+  }
+
+  &_header-float-small {
+    display: none;
+    width: 50px;
+    height: 50px;
+    min-height: auto;
+    border-radius: 50%;
+    box-shadow: 0px 2px 0px #cb3300;
+
+    @media (max-width: 575px) {
+      display: block;
+    }
   }
 
   &_present {

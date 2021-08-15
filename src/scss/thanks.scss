@@ -7,13 +7,12 @@
 
 .thanks {
   min-height: 1080px;
-  height: 100vh;
   padding-top: 24px;
   padding-bottom: 24px;
   @include bg;
   background-image: url('/src/img/bgs/thanks-bg.jpg');
 
-  @media (max-width: 767px) {
+  @media (max-width: 1200px) {
     min-height: auto;
   }
 
@@ -26,11 +25,7 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 263px;
-
-  @media (max-width: 767px) {
-    margin-bottom: 120px;
-  }
+  margin-bottom: 80px;
 
   @media (max-width: 575px) {
     margin-bottom: 20px;
@@ -56,14 +51,99 @@
 .thanks__subtitle {
   @include subtitle-bold;
   text-align: center;
-  margin-bottom: 48px;
+  margin-bottom: 24px;
   color: white;
 
   @media (max-width: 575px) {
     font-size: 24px;
     line-height: 34px;
-    margin-bottom: 36px;
   }
+}
+
+.thanks__text {
+  @include main;
+  margin-bottom: 7px;
+  text-align: center;
+  color: white;
+  margin-bottom: 0;
+
+  b {
+    color: $yellow;
+  }
+
+  &_bottom {
+    @include max-width(800px);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+  }
+}
+
+.thanks__list-label {
+  @include subtitle-bold;
+  text-align: center;
+  color: white;
+  margin-bottom: 24px;
+}
+
+.thanks__list {
+  @include reset-list;
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  margin-bottom: 37px;
+
+  @media (max-width: 991px) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.thanks__item {
+  background: #ffffff;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 16px;
+  @include max-width(568px);
+  min-height: 183px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 50px;
+  padding-right: 50px;
+
+  @media (max-width: 575px) {
+    padding-left: 9px;
+    padding-right: 9px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    min-height: auto;
+  }
+}
+
+.thanks__item-text {
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: $blue;
+  margin-bottom: 32px;
+  font-weight: bold;
+}
+
+.thanks__item-link {
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  text-decoration: underline;
+  background: linear-gradient(180deg, #FFA665 0%, #FC4F19 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: $yellow;
+  border-bottom: 2px solid #FC4F19;
+  font-weight: bold;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 98px;
 }
 
 .thanks__btn-box {

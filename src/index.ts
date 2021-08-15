@@ -2,6 +2,7 @@ import './scss/style.scss';
 import './ts/sliders';
 import './ts/partner-slider';
 import './ts/launch-slider';
+import './ts/header';
 import './ts/modals';
 import './ts/calc';
 import './ts/setup-forms';
