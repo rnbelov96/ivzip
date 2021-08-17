@@ -22,7 +22,7 @@
 .desc__title {
   @include title;
   font-size: 48px;
-  margin-top: 69px;
+  margin-top: 20px;
   margin-bottom: 22px;
   position: relative;
 
@@ -56,7 +56,7 @@
     position: absolute;
     z-index: -1;
     right: -655px;
-    top: -87px;
+    top: -37px;
 
     @media (max-width: 991px) {
       content: none;
@@ -118,6 +118,7 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 13px;
+  width: 65px;
 }
 
 .desc__item-text {
