@@ -46,9 +46,9 @@ const moveForward = () => {
         sliderImgBoxEl.style.transition = 'transform 0s ease-in';
         sliderImgBoxEl.style.transform = 'translate3d(-100%, 0, 0)';
         setTimeout(() => {
-          sliderImgBoxEl.style.transition = 'transform 1s ease-in';
+          sliderImgBoxEl.style.transition = 'transform 0.5s ease-in';
         }, 50);
-      }, 1100);
+      }, 600);
     });
   }
 
@@ -62,14 +62,14 @@ const moveForward = () => {
         sliderImgBoxEl.style.transition = 'transform 0s ease-in';
         sliderImgBoxEl.style.transform = 'translate3d(-200%, 0, 0)';
         setTimeout(() => {
-          sliderImgBoxEl.style.transition = 'transform 1s ease-in';
+          sliderImgBoxEl.style.transition = 'transform 0.5s ease-in';
         }, 50);
-      }, 1100);
+      }, 600);
     });
   }
   setTimeout(() => {
     unBlockBtns();
-  }, 1100);
+  }, 600);
   intervalTimer = setInterval(moveForward, 3000);
 };
 
@@ -105,9 +105,9 @@ const moveBack = () => {
         sliderImgBoxEl.style.transition = 'transform 0s ease-in';
         sliderImgBoxEl.style.transform = 'translate3d(0, 0, 0)';
         setTimeout(() => {
-          sliderImgBoxEl.style.transition = 'transform 1s ease-in';
+          sliderImgBoxEl.style.transition = 'transform 0.5s ease-in';
         }, 50);
-      }, 1100);
+      }, 600);
     });
   }
 
@@ -121,9 +121,9 @@ const moveBack = () => {
         sliderImgBoxEl.style.transition = 'transform 0s ease-in';
         sliderImgBoxEl.style.transform = 'translate3d(-200%, 0, 0)';
         setTimeout(() => {
-          sliderImgBoxEl.style.transition = 'transform 1s ease-in';
+          sliderImgBoxEl.style.transition = 'transform 0.5s ease-in';
         }, 50);
-      }, 1100);
+      }, 600);
     });
   }
   setTimeout(() => {
