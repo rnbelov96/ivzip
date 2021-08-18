@@ -47,8 +47,9 @@
   &::before {
     content: url('/src/img/grey-dots-circle-left.png');
     position: absolute;
-    left: -258px;
+    left: -845px;
     top: 0px;
+    z-index: -1;
 
     @media (max-width: 1450px) {
       content: none;
@@ -58,8 +59,9 @@
   &::after {
     content: url('/src/img/grey-dots-circle-right.png');
     position: absolute;
-    right: -258px;
+    right: -848px;
     top: 0px;
+    z-index: -1;
 
     @media (max-width: 1450px) {
       content: none;

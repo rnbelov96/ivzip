@@ -52,10 +52,10 @@
   }
 
   &::after {
-    content: url('/src/img/shop-desc-1.png');
+    content: url('/src/img/shop-desc-2.png');
     position: absolute;
     z-index: -1;
-    right: -655px;
+    right: -875px;
     top: -37px;
 
     @media (max-width: 991px) {
