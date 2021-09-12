@@ -109,5 +109,6 @@
   button {
     @include reset-btn;
     color: $grey;
+    text-decoration: underline;
   }
 }
